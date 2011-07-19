@@ -1,0 +1,49 @@
+\documentclass[letterpaper]{article}
+% support multipage tables with latex doing the page setting
+%\usepackage{longtable}
+\usepackage{booktabs}
+%\usepackage[bookmarks=true,bookmarksnumbered=true,bookmarksopen=true]{hyperref}
+%\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+
+\newcolumntype{x}[1]{%
+>{\RaggedRight\hspace{0pt}}p{#1}}%
+
+\begin{document}
+
+\begin{center}
+\large{2011 - FON}\\
+\Large{Chicago Set Dance Weekned}\\
+\end{center}
+
+
+\hspace*{4em}
+\begin{tabular}{@{}crx{5cm}rl@{}}
+\Square & \$10 & Francis O'Neil club Celi & 8pm &- 11pm\\
+\Square & \$15 & Saturday Morning Workshop & 10am &- 12pm\\
+\Square & \$15 & Saturday Afternoon Workshop& 1pm &- 4pm\\
+\Square & \$15 & Saturday Night Celi& 8pm &- 12am\\
+\Square & \$10 & Sunday Workshop & 12pm &- 2pm\\
+\Square & \$10 & Sunday Celi& 2pm &- 4pm\\
+\\
+\hline
+\Square & \$60 & Weekend Package\\
+
+\end{tabular}
+
+ Total Check \$ \rule{1.5cm}{0.4pt}\\
+
+
+\hspace*{2em}\\
+Name: \rule{3.5cm}{0.4pt}\\
+Address:  \rule{3.5cm}{0.4pt}\\
+City: \rule{3.5cm}{0.4pt}\\
+State: \rule{3.5cm}{0.4pt}\\
+Zip: \rule{3.5cm}{0.4pt}\\
+Phone Number: \rule{3.5cm}{0.4pt}\\
+E-mail: \rule{3.5cm}{0.4pt}\\
+
+\end{document}
