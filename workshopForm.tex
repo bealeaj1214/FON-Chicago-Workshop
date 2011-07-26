@@ -4,10 +4,15 @@
 \usepackage{booktabs}
 %\usepackage[bookmarks=true,bookmarksnumbered=true,bookmarksopen=true]{hyperref}
 %\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+\usepackage[hmargin=2.25cm, vmargin=2.0cm]{geometry}
 
 \usepackage{array}
 \usepackage{ragged2e}
 \usepackage{wasysym}
+
+\pagestyle{empty}
+
+\newcommand*{\Tickbox}{\framebox{\phantom{m}}}
 
 \newcolumntype{x}[1]{%
 >{\RaggedRight\hspace{0pt}}p{#1}}%
@@ -31,7 +36,7 @@
 \\
 \hline
 \Square & \$15 & All-Day Sunday mini-Package\\
-\Square & \$60 & Weekend Package\\
+\Square & \$60 & Early Registration \newline Weekend Package\\
 
 \end{tabular}
 
@@ -41,31 +46,47 @@
 
 \hspace*{2em}\\
 
+\begin{minipage}[h]{0.45\textwidth}
+Name: \hrulefill{}\\
+%%\rule{4.5cm}{0.4pt}
 
-Name: \rule{4.5cm}{0.4pt}\\
+Address:  \hrulefill{}\\
 
-Address:  \rule{4.5cm}{0.4pt}\\
+City: \hrulefill{}\\
 
-City: \rule{4.5cm}{0.4pt}\\
+State: \hrulefill{} \hspace*{1em} Zip: \hrulefill{}\\
 
-State: \rule{4.5cm}{0.4pt}\\
+Phone Number: \hrulefill{}\\
 
-Zip: \rule{4.5cm}{0.4pt}\\
-
-Phone Number: \rule{4.5cm}{0.4pt}\\
-
-E-mail: \rule{4.5cm}{0.4pt}\\
-
+E-mail: \hrulefill{}\\
+\end{minipage}
 \vspace*{2em}
-Make checks to FON-Chicago Workshop Weekend\\
+\hrule
+\vspace*{1em}
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+Please make checks payable to \\\textbf{FON-Chicago Workshop Weekend}\\Mail by September 24, 2011. If mailed after September 24th, full workshop price is \$75.
+
 
 \vspace*{1em}
-Mail checks by September 24, 2011\\
 
-\hspace{-1em}Mailing Address\\
+\hspace{0em}\textbf{Mail registration form and check to:}\\
 Dan Cahill\\
 2730 E. Bonnie Brook Ln.\\
 Waukegan, IL 60087
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+\vspace{0pt}
+{\large\textbf{FON - Chicago Workshop Weekend}}\\ 
 
+with Tony Ryan of Galway.\\October 8th - 10th, 2011\\ Sponsored by the Francis O'Neill Club of Chicago.\\
+
+\vspace*{0.5em}
+Location : IAHC\\
+Irish American Hertiage Center\\
+4626 N. Knox Avenue\\
+Chicago, IL  60630
+\end{minipage}
 
 \end{document}
