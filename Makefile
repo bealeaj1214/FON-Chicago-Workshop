@@ -5,7 +5,7 @@ PDFLATEX:=${TEXBIN}/xelatex
 PATH:=${TEXBIN}:${PATH}
 export PATH
 
-TEXINPUTS:=.:tex:build:
+TEXINPUTS:=.:tex:build:images:
 
 export TEXINPUTS
 export PDFLATEX
