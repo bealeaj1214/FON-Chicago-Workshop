@@ -15,5 +15,7 @@ export PDFLATEX
 
 workshopForm.pdf :: workshopForm.tex build
 
+Flyer.pdf :: Flyer.tex build tex/workshopDetails2.tex
+
 build ::
 	@test -d $@ || mkdir -p $@
