@@ -1,3 +1,4 @@
+all ::
 
 TEXBIN=/usr/texbin
 PDFLATEX:=${TEXBIN}/xelatex
@@ -13,9 +14,12 @@ export PDFLATEX
 %.pdf :: %.tex
 	texi2dvi -b -p --tidy --build-dir=build $< 
 
-workshopForm.pdf :: workshopForm.tex build
+workshopForm.pdf :: workshopForm.tex build tex/workshopDetails.tex
 
 Flyer.pdf :: Flyer.tex build tex/workshopDetails2.tex
 
 build ::
 	@test -d $@ || mkdir -p $@
+
+
+all :: workshopForm.pdf  Flyer.pdf 
