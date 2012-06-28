@@ -21,5 +21,6 @@ Flyer.pdf :: Flyer.tex build tex/workshopDetails2.tex
 build ::
 	@test -d $@ || mkdir -p $@
 
+SetList.pdf :: SetList.tex
 
-all :: workshopForm.pdf  Flyer.pdf 
+all :: workshopForm.pdf  Flyer.pdf  SetList.pdf
