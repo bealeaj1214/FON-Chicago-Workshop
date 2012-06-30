@@ -32,7 +32,7 @@ all :: workshopForm.pdf  Flyer.pdf  SetList.pdf
 all:: Ad2012.pdf Ad2012-red.pdf
 
 Flyer2012.pdf :: Flyer2012.tex build tex/workshopDetails2.tex
-	latex $<
-	latex $<
+	pdflatex $<
+	pdflatex $<
 
 all :: Flyer2012.pdf
