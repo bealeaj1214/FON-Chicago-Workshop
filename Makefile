@@ -23,4 +23,16 @@ build ::
 
 SetList.pdf :: SetList.tex
 
+Ad2012.pdf :: Ad2012.tex build
+
+Ad2012-red.pdf :: Ad2012-red.tex build
+
 all :: workshopForm.pdf  Flyer.pdf  SetList.pdf
+
+all:: Ad2012.pdf Ad2012-red.pdf
+
+Flyer2012.pdf :: Flyer2012.tex build tex/workshopDetails2.tex
+	latex $<
+	latex $<
+
+all :: Flyer2012.pdf
