@@ -36,3 +36,8 @@ Flyer2012.pdf :: Flyer2012.tex build tex/workshopDetails2.tex
 	pdflatex $<
 
 all :: Flyer2012.pdf
+
+Brochure2012.pdf :: Brochure2012.tex  tex/workshopDetails2.tex
+	pdflatex $< && pdflatex $<
+
+all :: Brochure2012.pdf
