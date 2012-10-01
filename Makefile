@@ -31,6 +31,10 @@ all :: workshopForm.pdf  Flyer.pdf  SetList.pdf
 
 all:: Ad2012.pdf Ad2012-red.pdf
 
+Poster2012.pdf :: Poster2012.tex build
+
+all:: Poster2012.pdf
+
 Flyer2012.pdf :: Flyer2012.tex build tex/workshopDetails2.tex
 	pdflatex $<
 	pdflatex $<

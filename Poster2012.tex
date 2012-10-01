@@ -1,0 +1,55 @@
+\documentclass[letterpaper]{article}
+% support multipage tables with latex doing the page setting
+%\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{hyperref}
+%\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+\usepackage[hmargin=2.1cm, vmargin=2.0cm]{geometry}
+
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+\usepackage{graphicx}
+
+% attempt to use fontspec to select fonts 
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Calibri}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setromanfont[Scale=MatchLowercase,Mapping=tex-text]{Calluna}
+%\usepackage{fix-cm}
+
+\pagestyle{empty}
+
+
+\begin{document}
+%%\graphicspath{{images//}}
+
+%\sffamily
+\begin{center}
+\fontspec{Tallys}
+\fontsize{18}{25} \bfseries CHICAGO SET DANCE WEEKEND\\
+\fontsize{14}{16} \bfseries{\vspace*{1em}FEATURING\\}
+\fontspec{Copperplate}
+\fontsize{20}{30}\bfseries TONY RYAN\\
+\end{center}
+
+\vspace*{0.45em}
+\vspace*{0.45em}
+\begin{center}
+\includegraphics[scale=0.85]{TonyRyanHeadShot.jpg}
+\end{center}
+
+\begin{center}
+\vspace*{2em}
+{\normalsize \href{http://www.irishdancechicago.com}{\tt http://www.irishdancechicago.com} }
+\end{center}
+\begin{center}
+\includegraphics[scale=0.60]{fon-logo.jpeg}
+\end{center}
+\begin{center}
+\sffamily
+\fontsize{14}{16} \bfseries{October 5th, 6th, \&  7th, 2012}
+\end{center}
+ 
+\end{document}
