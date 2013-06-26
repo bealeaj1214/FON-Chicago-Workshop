@@ -52,10 +52,17 @@ Flyer2013.pdf :: Flyer2013.tex build tex/workshopDetails2_2013.tex
 
 all :: Flyer2013.pdf
 
-Brochure2013.pdf :: Brochure2013.tex  tex/workshopDetails2_2013.tex
+Brochure2013.pdf :: Brochure2013.tex  tex/workshopDetails2_2013.tex tex/registrationForm2013.tex
 	latexmk -f -pdf -outdir=build -auxdir=build $<
 	cp build/$(@F) $@
 
 
 all :: Brochure2013.pdf
+
+Registration2013.pdf :: Registration2013.tex   tex/registrationForm2013.tex
+	latexmk -f -pdf -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
+
+all :: Registration2013.pdf
 

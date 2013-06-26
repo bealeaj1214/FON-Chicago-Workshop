@@ -1,0 +1,56 @@
+\documentclass[12pt,
+notumble,
+letterpaper]{leaflet}
+% support multipage tables with latex doing the page setting
+%\usepackage{longtable}
+%\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scaled=.93]{libertine}
+\usepackage{hyperref}
+%\usepackage[margin=10pt,font=small,labelfont=bf]{caption}
+%\usepackage[landscape,hmargin=2.25cm, vmargin=2.0cm]{geometry}
+
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{wasysym}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{xcolor}
+
+\newcolumntype{x}[1]{%
+>{\RaggedRight\hspace{0pt}}p{#1}}%
+
+
+\title{FON Registration Form}
+\author{Alan Beale}
+\date{}
+
+%\AddToBackground{1}{
+%  \put(0,0){\textcolor{TealBlue}{\rule{\paperwidth}{\paperheight}}}}
+%\AddToBackground{3}{
+%  \put(0,0){\textcolor{Plum}{\rule{\paperwidth}{\paperheight}}}}
+
+\CutLine{6}
+\CutLine{4}
+\CutLine{5}
+\CutLine{3}
+\CutLine{1}
+
+\begin{document}
+
+
+\input{registrationForm2013}
+\pagebreak
+\input{registrationForm2013}
+\pagebreak
+\input{registrationForm2013}
+\pagebreak
+\input{registrationForm2013}
+\pagebreak
+\input{registrationForm2013}
+\pagebreak
+\input{registrationForm2013}
+\pagebreak
+
+\end{document}
