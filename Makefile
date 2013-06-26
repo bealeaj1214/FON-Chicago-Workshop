@@ -12,7 +12,9 @@ export TEXINPUTS
 export PDFLATEX
 
 %.pdf :: %.tex
-	texi2dvi -b -p --tidy --build-dir=build $< 
+	latexmk -f -xelatex -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
 
 workshopForm.pdf :: workshopForm.tex build tex/workshopDetails.tex
 
@@ -42,7 +44,8 @@ Flyer2012.pdf :: Flyer2012.tex build tex/workshopDetails2.tex
 all :: Flyer2012.pdf
 
 Brochure2012.pdf :: Brochure2012.tex  tex/workshopDetails2.tex
-	pdflatex $< && pdflatex $<
+	latexmk -f -pdf -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
 
 all :: Brochure2012.pdf
 
@@ -66,3 +69,9 @@ Registration2013.pdf :: Registration2013.tex   tex/registrationForm2013.tex
 
 all :: Registration2013.pdf
 
+
+Ad2013.pdf :: Ad2013.tex build tex/Ad2013-body.tex
+	latexmk -f -xelatex -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
+all:: Ad2013.pdf
