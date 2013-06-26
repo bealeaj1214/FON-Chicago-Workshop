@@ -7,17 +7,18 @@
 #ignore pdf file
 workshopForm.pdf
 Flyer.pdf
+Poster2012.pdf
 
 Ad2012.pdf
 Ad2012-red.pdf
 SetList.pdf
 
-Flyer2012.aux
-Flyer2012.log
-Flyer2012.out
-Flyer2012.pdf
+Flyer201?.aux
+Flyer201?.log
+Flyer201?.out
+Flyer201?.pdf
 
-Brochure2012.aux
-Brochure2012.log
-Brochure2012.out
-Brochure2012.pdf
+Brochure201?.aux
+Brochure201?.log
+Brochure201?.out
+Brochure201?.pdf

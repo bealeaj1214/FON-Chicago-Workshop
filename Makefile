@@ -45,3 +45,17 @@ Brochure2012.pdf :: Brochure2012.tex  tex/workshopDetails2.tex
 	pdflatex $< && pdflatex $<
 
 all :: Brochure2012.pdf
+
+Flyer2013.pdf :: Flyer2013.tex build tex/workshopDetails2_2013.tex
+	latexmk -f -pdf -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
+all :: Flyer2013.pdf
+
+Brochure2013.pdf :: Brochure2013.tex  tex/workshopDetails2_2013.tex
+	latexmk -f -pdf -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
+
+all :: Brochure2013.pdf
+
