@@ -60,7 +60,15 @@ Brochure2013.pdf :: Brochure2013.tex  tex/workshopDetails2_2013.tex tex/registra
 	cp build/$(@F) $@
 
 
+
+Brochure2014.pdf :: Brochure2014.tex  tex/workshopDetails2_2013.tex tex/registrationForm2014.tex
+	latexmk -f -pdf -outdir=build -auxdir=build $<
+	cp build/$(@F) $@
+
+
 all :: Brochure2013.pdf
+
+all :: Brochure2014.pdf
 
 Registration2013.pdf :: Registration2013.tex   tex/registrationForm2013.tex
 	latexmk -f -pdf -outdir=build -auxdir=build $<
